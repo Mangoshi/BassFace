@@ -2,6 +2,10 @@
 require_once 'config.php';
 require_once 'lib/validation-errors.php';
 
+if (is_logged_in()) {
+  redirect("/home.php");
+}
+
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method === "GET") {
   // retrieving the form so it can be completed and submitted
@@ -26,6 +30,7 @@ else if ($method === "POST") {
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
       <main role="main">
+        <?php require 'include/exception.php'; ?>
         <h1>Login Form</h1>
         <form name='login' action="login.php" method="post">
 

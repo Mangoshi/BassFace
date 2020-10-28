@@ -1,18 +1,6 @@
 <?php
 require_once 'lib/validation-generic.php';
 
-function validate_name($name) {
-  global $errors;
-  if (!is_present($name)) {
-    $errors['name'] = "Name required";
-  }
-  else if (!has_length($name, ["min" => 1, "max" => 32])) {
-    $errors['name'] = "Name is too short or long";
-  }
-  else if (!has_no_html_tags($name)) {
-    $errors['name'] = "Name cannot contain any HTML tags";
-  }
-}
 function validate_email($email) {
   global $errors;
   if (!is_present($email)) {
@@ -35,6 +23,15 @@ function validate_password($password) {
   }
   else if (!has_length($password, ["min" => 8, "max" => 64])) {
     $errors['password'] = "Password is too short or long";
+  }
+}
+function validate_name($name) {
+  global $errors;
+  if (!is_present($name)) {
+    $errors['name'] = "Name required";
+  }
+  else if (!has_length($name, ["min" => 2, "max" => 64])) {
+    $errors['name'] = "Name is too short or long";
   }
 }
 ?>

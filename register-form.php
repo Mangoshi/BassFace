@@ -2,6 +2,10 @@
 require_once 'config.php';
 require_once 'lib/validation-errors.php';
 
+if (is_logged_in()) {
+  redirect("/home.php");
+}
+
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method === "GET") {
   // retrieving the form so it can be completed and submitted
@@ -26,14 +30,9 @@ else if ($method === "POST") {
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
       <main role="main">
+        <?php require 'include/exception.php'; ?>
         <h1>Register Form</h1>
         <form name='register' action="register.php" method="post">
-
-        <div class="form-field">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" value="<?= get_value('name') ?>" />
-            <span class="error"><?= get_error('name') ?></span>
-          </div>
 
           <div class="form-field">
             <label for="email">Email:</label>
@@ -45,6 +44,12 @@ else if ($method === "POST") {
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" />
             <span class="error"><?= get_error('password') ?></span>
+          </div>
+
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="<?= get_value('name') ?>" />
+            <span class="error"><?= get_error('name') ?></span>
           </div>
 
           <div class="form-field">
