@@ -56,15 +56,26 @@ catch (Exception $ex) {
                     <tr>
                       <td><input type="radio" name="customer_id" value="<?= $festival->id ?>" /></ </td>
                       <td><?= $festival->title ?></td>
-                      <td><?= $festival->description ?></td>
+                      <td><?= substr($festival->description, 0, 30) ?></td>
                       <td><?= $festival->location ?></td>
                       <td><?= $festival->start_date ?></td>
                       <td><?= $festival->end_date ?></td>
                       <td><?= $festival->contact_name ?></td>
                       <td><?= $festival->contact_email ?></td>
                       <td><?= $festival->contact_phone ?></td>
-                      <td><?= $festival->image_id ?></td>
-                    </tr>
+                        <td>
+                            <?php
+                            try {
+                                $image = Image::findById($festival->image_id);
+                            } catch (Exception $e) {
+                            }
+                            if ($image !== null){
+                                ?>
+                                <img src="<?= APP_URL . "/" . $image->filename ?>" width="50px" alt="image" />
+                                <?php
+                            }
+                            ?>
+                        </td>                    </tr>
                   <?php } ?>
                 </tbody>
               </table>
