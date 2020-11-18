@@ -1,8 +1,18 @@
 <?php
 require_once 'config.php';
 
-if (!is_logged_in()) {
-  redirect("/login-form.php");
+if (!$request->is_logged_in()) {
+  $request->redirect("/login-form.php");
+}
+?>
+<?php
+try{
+    $festivals = Festival::findAll();
+}
+catch (Exception $ex) {
+    $request->session()->set("flash_message", $ex->getMessage());
+    $request->session()->set("flash_message_class", "alert-warning");
+    $festivals = [];
 }
 ?>
 <!doctype html>
@@ -19,9 +29,47 @@ if (!is_logged_in()) {
     <div class="container">
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
+      <?php require "include/flash.php"; ?>
       <main role="main">
         <h1>Home</h1>
-        <p>Welcome to your home page!</p>
+        <p>Welcome, <?= $request->session()->get("name") ?>. This is your home page!</p>
+        <div class="row">
+            <div class="col table-responsive">
+            <h1>Festival Browser</h1>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Contact Name</th>
+                    <th>Contact Email</th>
+                    <th>Contact Phone</th>
+                    <th>Image ID</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php foreach ($festivals as $festival) { ?>
+                    <tr>
+                      <td><input type="radio" name="customer_id" value="<?= $festival->id ?>" /></ </td>
+                      <td><?= $festival->title ?></td>
+                      <td><?= $festival->description ?></td>
+                      <td><?= $festival->location ?></td>
+                      <td><?= $festival->start_date ?></td>
+                      <td><?= $festival->end_date ?></td>
+                      <td><?= $festival->contact_name ?></td>
+                      <td><?= $festival->contact_email ?></td>
+                      <td><?= $festival->contact_phone ?></td>
+                      <td><?= $festival->image_id ?></td>
+                    </tr>
+                  <?php } ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
       </main>
       <?php require 'include/footer.php'; ?>
     </div>

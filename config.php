@@ -1,18 +1,22 @@
 <?php
-define('APP_URL', 'http://localhost/music-festivals-1-master/');
+define('APP_URL', 'http://localhost/awdd/festivals-website-1-Mangoshi');
 
 define('DB_SERVER', 'localhost');
 define('DB_DATABASE', 'festivals');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 
-define('KEY_EXCEPTION', '__EXCEPTION__');
-
 set_include_path(
   get_include_path() . PATH_SEPARATOR . dirname(__FILE__)
 );
 
-session_start();
+spl_autoload_register(function ($class_name) {
+    require_once 'classes/' . $class_name . '.php';
+});
 
-require "lib/global.php";
+require_once "lib/global.php";
+
+if (!isset($request)) {
+  $request = new HttpRequest();
+}
 ?>

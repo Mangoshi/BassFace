@@ -15,7 +15,7 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <?php if (!isset($_SESSION) || !array_key_exists("email", $_SESSION)) { ?>
+      <?php if (!$request->session()->has("email")) { ?>
       <li class="nav-item">
         <a class="nav-link" href="<?= APP_URL ?>/login-form.php">Login</a>
       </li>

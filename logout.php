@@ -1,12 +1,11 @@
+<?php require_once 'config.php'; ?>
+
 <?php
-require_once 'config.php';
-
-if (!is_logged_in()) {
-  redirect("/login-form.php");
+if (!$request->is_logged_in()) {
+  $request->redirect("/index.php");
 }
+$request->session()->forget('email');
+$request->session()->forget('name');
 
-unset($_SESSION['email']);
-unset($_SESSION['name']);
-
-redirect("/index.php");
+$request->redirect("/index.php");
 ?>

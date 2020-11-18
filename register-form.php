@@ -1,19 +1,4 @@
-<?php
-require_once 'config.php';
-require_once 'lib/validation-errors.php';
-
-if (is_logged_in()) {
-  redirect("/home.php");
-}
-
-$method = $_SERVER['REQUEST_METHOD'];
-if ($method === "GET") {
-  // retrieving the form so it can be completed and submitted
-}
-else if ($method === "POST") {
-  // the form was submitted but there are errors
-}
-?>
+<?php require_once 'config.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,27 +14,27 @@ else if ($method === "POST") {
     <div class="container">
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
+      <?php require "include/flash.php"; ?>
       <main role="main">
-        <?php require 'include/exception.php'; ?>
         <h1>Register Form</h1>
         <form name='register' action="register.php" method="post">
 
           <div class="form-field">
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" value="<?= get_value('email') ?>" />
-            <span class="error"><?= get_error('email') ?></span>
+            <input type="text" name="email" id="email" value="<?= old("email") ?>" />
+            <span class="error"><?= error("email") ?></span>
           </div>
 
           <div class="form-field">
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" />
-            <span class="error"><?= get_error('password') ?></span>
+            <span class="error"><?= error("password") ?></span>
           </div>
 
           <div class="form-field">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" value="<?= get_value('name') ?>" />
-            <span class="error"><?= get_error('name') ?></span>
+            <input type="text" name="name" id="name" value="<?= old("name") ?>" />
+            <span class="error"><?= error("name") ?></span>
           </div>
 
           <div class="form-field">

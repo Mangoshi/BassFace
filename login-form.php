@@ -1,17 +1,7 @@
+<?php require_once 'config.php'; ?>
 <?php
-require_once 'config.php';
-require_once 'lib/validation-errors.php';
-
-if (is_logged_in()) {
-  redirect("/home.php");
-}
-
-$method = $_SERVER['REQUEST_METHOD'];
-if ($method === "GET") {
-  // retrieving the form so it can be completed and submitted
-}
-else if ($method === "POST") {
-  // the form was submitted but there are errors
+if ($request->is_logged_in()) {
+  $request->redirect("/home.php");
 }
 ?>
 <!doctype html>
@@ -29,21 +19,21 @@ else if ($method === "POST") {
     <div class="container">
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
+      <?php require "include/flash.php"; ?>
       <main role="main">
-        <?php require 'include/exception.php'; ?>
         <h1>Login Form</h1>
         <form name='login' action="login.php" method="post">
 
           <div class="form-field">
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" value="<?= get_value('email') ?>" />
-            <span class="error"><?= get_error('email') ?></span>
+            <input type="text" name="email" id="email" value="<?= old("email") ?>" />
+            <span class="error"><?= error("email") ?></span>
           </div>
 
           <div class="form-field">
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" />
-            <span class="error"><?= get_error('password') ?></span>
+            <span class="error"><?= error("password") ?></span>
           </div>
 
           <div class="form-field">
