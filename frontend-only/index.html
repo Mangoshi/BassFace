@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>BassFace</title>
+    </head>
+    <body class="black lato-regular">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitpage.html">UI Kit Page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0 navBrand">
+                <a href="index.html" class="navbar-brand"><img src="img/vinyl.png" style="padding-right: 10px; padding-bottom: 2px;"><strong class="lato-light">BassFace.Hz</strong></a>
+                <button class="navbar-toggler myToggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="jumbotron myJumbotron mt-5">
+            <div class="container-fluid myFluidContainer">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <h1 class="lato-regular heroText d-none d-xl-block">The <span class="lato-bold heroHover">Bass</span><br>In your <span class="lato-bold heroHover">Face</span></h1>
+                        <div class="myHeroMask">
+                            <div class="myHero"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-none d-lg-block">
+                        <img class="turntableArm" src="img/arm.png">
+                        <div class="card heroCardBG d-flex">
+                            <div class="heroCard d-flex flex-column justify-content-center">
+                                <p class="lead lato-bold text-center heroCardText">You wanna feel that <a href="#festivalBrowser" class="heroCardLink"><span class="heroCardTextHighlight">rumble?</span></a></p>
+                                <img src="img/bigVinyl.png" class="vinylHero align-self-center">
+                                <a href="#festivalBrowser" class="btn btn-primary redButton">Festivals</a>
+                                <a href="kitpage.html" class="btn btn-secondary greyButton">UI Kit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-light py-2 myFestivals">
+            <div class="container">
+                <h2 class="rowHeading">Most Popular Festivals</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#" class="lato-light align-self-center cardTitle">BassTown Returns</a>
+                                <img src="img/firebreatherPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Bass Music
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Bristol, UK</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#"  class="lato-light align-self-center cardTitle">Electric Avenue</a>
+                                <img src="img/confettiPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Various Electronica
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Dublin, Ireland</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm imageCard">
+                                <a href="#" class="lato-light align-self-center cardTitle">DnB Arena 2021</a>
+                                <img src="img/rigPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Drum & Bass / Jungle
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Brighton, UK</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#" class="lato-light align-self-center cardTitle">SeshOn 2021</a>
+                                <img src="img/vibinLandscape.jpg" class="cardImageLandscape">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Techno / Drum & Bass
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Clare, Ireland</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#" class="lato-light align-self-center cardTitle">Techno & Cans</a>
+                                <img src="img/confettiPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Techno / Acid Techno / Hardtek
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Cork, Ireland</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="rowHeading">Latest Festivals</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#" class="lato-light align-self-center cardTitle">Basstown Returns</a>
+                                <img src="img/firebreatherPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Bass Music
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Bristol, UK</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm">
+                            <a href="#" class="lato-light align-self-center cardTitle">SeshOn 2021</a>
+                                <img src="img/vibinLandscape.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Techno / Drum & Bass
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Clare, Ireland</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card myCard mb-4 shadow-sm imageCard">
+                                <a href="#" class="lato-light align-self-center cardTitle">DnB Arena 2021</a>
+                                <img src="img/rigPortrait.jpg" class="cardImagePortrait">
+                            <div class="card-body">
+                                <p class="card-text text-muted" id="cardGenre">
+                                    Drum & Bass / Jungle
+                                </p>
+                                <p class="card-text" id="cardDescription">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <small class="card-text">Starting Price: <span class="text-muted" id="cardPrice">€100</span></small>
+                                <br>
+                                <small class="card-text">Location: <span class="text-muted" id="cardLocation">Brighton, UK</span></small>
+                                <br>
+                                <small class="card-text">Date: <span class="text-muted" id="cardDate">24/07/21 → 26/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted" id="cardTickets">247</span></small>
+                            </div>
+                                <div class="d-flex justify-content-between align-self-center m-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
+                                        <button type="button" class="btn btn-sn btn-outline-success">EDIT</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="rowHeading" id="festivalBrowser">Festival Browser</h2>
+                <div class="row">
+                    <div class="container-fluid table-responsive">
+                        <table class="table table-hover">
+                            <thead class="tableHead">
+                            <tr>
+                                <th scope="col" class="tableHeadCol"><a href="#sort1" class="tableHeadLink">Festival</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort2" class="tableHeadLink">Date</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort3" class="tableHeadLink">Type</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort4" class="tableHeadLink">Size</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort5" class="tableHeadLink">Price</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort6" class="tableHeadLink">Status</a></th>
+                                <th scope="col" class="tableHeadLink tableHeadCol" style="user-select: none;">Buy</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row"><a href="#festival1" class="tableLink">DnB Arena 2021</a></th>
+                                <td>24/07/21</td>
+                                <td>DnB</td>
+                                <td>10,0000</td>
+                                <td>€60</td>
+                                <td class="alert-info ticketStatus lato-bold" id="ticketStatus">Available</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#festival2" class="tableLink">Techno & Cans</a></th>
+                                <td>24/07/21</td>
+                                <td>Techno</td>
+                                <td>3,000</td>
+                                <td>€40</td>
+                                <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#festival3" class="tableLink">BassFace Official</a></th>
+                                <td>24/07/21</td>
+                                <td>140</td>
+                                <td>20,000</td>
+                                <td>€80</td>
+                                <td class="alert-warning ticketStatus lato-bold" id="ticketStatus">Nearly Gone!</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#festival4" class="tableLink">SeshOn 2021</a></th>
+                                <td>24/07/21</td>
+                                <td>Various</td>
+                                <td>5,000</td>
+                                <td>€100</td>
+                                <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#festival5" class="tableLink">BassTown Returns</a></th>
+                                <td>24/07/21</td>
+                                <td>Jungle</td>
+                                <td>4,500</td>
+                                <td>€60</td>
+                                <td class="alert-warning ticketStatus lato-bold" id="ticketStatus">Nearly Gone!</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#festival6" class="tableLink">Electric Avenue</a></th>
+                                <td>24/07/21</td>
+                                <td>Electronica</td>
+                                <td>10,000</td>
+                                <td>€75</td>
+                                <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="toTopBtn" title="Go Back To Top">Back To Top <span class="material-icons">keyboard_arrow_up</span></button>
+    </main>
+    <footer class="page-footer font-small blue pt-4 bg-dark">
+        <div class="container-fluid text-center text-md-left text-light">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase lato-black"><img src="img/vinyl.png" class="pr-2">BassFace.Hz</h5>
+                    <p>We deliver the bass.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase lato-regular">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="footerLink text-muted">One link</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footerLink text-muted">Two link</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footerLink text-muted">Three link</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="footerLink text-muted">Four...</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <h5 class="text-uppercase lato-regular">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex flex-column subscribeContainer">
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email "><br>
+                                <button class="bg-light border-dark lato-bold subscribeBtn" type="button"><span class="material-icons">keyboard_arrow_up</span>Subscribe<span class="material-icons">keyboard_arrow_up</span></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+            <a href="#" class="footerLink  text-warning"> BassFaceCollective</a>
+        </div>
+    </footer>
+
+    <!-- My Javascript -->
+    <script src="js/BackToTop.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

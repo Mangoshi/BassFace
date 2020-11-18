@@ -1,0 +1,486 @@
+@import "fonts.css";
+
+:root {
+    /* ENGIE PALETTE */
+    --blue-engie: #00aaff;
+    --blue-corporate: #009de9;
+    --white: #ffffff;
+    --black: #000000;
+    --gradient-primary: #0af - #23d2b5;
+    --green-java: #6ed2b1;
+    --orange-crusta: #f78a31;
+    --purple: #1f106d;
+    --red-mandy: #e74a50;
+    --yellow-bright-sun: #fbdb3c;
+    --alertGreen: #009934;
+    --alertOrange: #e07602;
+    --alertRed: #cc0033;
+    --blue-bigstone: #0f1e29;
+    --blue-allports: #0b74c0;
+    --blue-rhino: #2b485c;
+    --blue-venice: #005288;
+    --cerise: #e62b87;
+    --green-fun: #69af23;
+    --green-pine: #007873;
+    --green-riogrande: #becd00;
+    --violet-eggplant: #910f7d;
+    --violet: #552382;
+    --yellow: #faca08;
+
+    /* MY PALETTE */
+    --light-grey: #f8f9fa;
+}
+
+/* HTML TAGS */
+
+body, html{
+    background-color: var(--light-grey);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h2{
+    text-align: center;
+}
+
+/* NAVBAR */
+
+.navBrand *{
+    transition: 1s;
+}
+
+.navBrand:hover *{
+    color: var(--yellow);
+    transition: 1s;
+}
+
+.myToggler{
+    border: none;
+    outline: none;
+}
+
+.myToggler:focus{
+    border: none;
+    outline: none;
+}
+
+
+/* JUMBOTRON / HERO */
+
+.myRow{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.myJumbotron{
+    margin: 0 !important;
+    padding-bottom: 0;
+    background-image: url(../img/sandLandscape.jpg);
+    background-size: cover;
+}
+
+.myHero{
+    height: 500px;
+    background-image: url(../img/concertHero.jpg);
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: repeat;
+    animation: slide 10s alternate infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0%{
+    transform: translate(-10vw, 0px);
+    }
+    100%{
+    transform: translate(0vw, 0px);
+    }
+}
+
+.myHeroMask{
+    margin-top: 60px;
+    margin-left: 10%;
+    mask-image: url(../img/triangles.svg);
+    -webkit-mask-image: url(../img/triangles.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    overflow: hidden;
+    transform: scale(1.2);
+}
+
+.heroText{
+    margin-top: 60px;
+    margin-left: 40%;
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+    color: var(--white);
+}
+
+.heroHover:hover{
+    color: var(--alertRed);
+}
+
+.turntableArm{
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 155px;
+    rotate: -2deg;
+    pointer-events:none;
+}
+
+.heroCardBG{
+    top: 80px;
+    width: 270px;
+    height: 363px;
+    background-image: url(../img/redpaint.jpg);
+    background-position: 500px 500px;
+}
+
+.heroCard{
+    margin: 10px;
+    background-color: var(--white);
+    height: 343px;
+}
+
+.heroCardText{
+    user-select: none;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.heroCardTextHighlight{
+    text-shadow: var(--red-mandy) 1px 2px 3px;
+    transition: ease-in-out 0.25s;
+}
+
+.heroCardTextHighlight:hover{
+    text-shadow: var(--red-mandy) 1px 2px 3px;
+    font-size: 110%;
+    transition: ease-in-out 0.25s;
+}
+
+.heroCardLink{
+    color: var(--black);
+}
+
+.heroCardLink:hover{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.vinylHero{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    transition: transform 999s 999s linear;
+}
+
+/*
+@keyframes rotation-clockwise {
+    from {
+    transform: rotate(0);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+} 
+*/
+
+.vinylHero:hover{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    transform: rotate(10000deg);
+    transition: transform 50s linear;
+}
+
+
+.redButton{
+    margin: 0px 5px;
+    background: var(--red-mandy);
+    border-color: var(--red-mandy);
+    border-width: 3px;
+}
+.redButton:hover{
+    background: var(--yellow-bright-sun);
+    border-color: var(--yellow);
+    color: var(--black);
+}
+
+.greyButton{
+    margin: 0px 5px;
+    background: var(--black);
+    border-color: var(--black);
+}
+.greyButton:hover{
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--black);
+}
+
+/* MAIN */
+
+.myFestivals{
+    margin-top: 80px;
+}
+
+.myCard{
+    overflow: hidden;
+}
+
+.cardTitle{
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--blue-bigstone);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.cardTitle:hover{
+    font-size: 26px;
+    background-color: var(--black);
+}
+
+.cardTitle:hover{
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.cardImagePortrait{
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.cardImageLandscape{
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.imageCard{
+    max-width: 100%;
+}
+
+.rowHeading{
+    text-align: left;
+    user-select: none;
+}
+
+.rMargin{
+    margin-top: -28px;
+}
+
+.material-icons{
+    transform: translateY(5px);
+}
+
+/* TABLES */
+
+.tableHead{
+    background-color: var(--blue-bigstone);
+    color: var(--white);
+}
+
+.tableHeadCol:hover{
+    background-color: var(--blue-rhino);
+    color: var(--yellow);
+}
+
+
+.tableHeadLink{
+    color: var(--white);
+}
+
+.tableHeadLink:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.tableHeadLink:visited{
+    color: var(--white);
+}
+
+.tableHeadLink:visited:hover{
+    color: var(--white);
+}
+
+.tableLink{
+    color: black;
+}
+
+.tableLink:hover{
+    color: var(--blue-allports);
+    text-decoration: none;
+}
+
+.tableLink:visited{
+    color: var(--blue-rhino);
+    text-decoration: none;
+}
+
+.tableLink:visited:hover{
+    color: var(--blue-allports);
+    text-decoration: none;
+}
+
+.ticketStatus{
+    font-size: 16px;
+    width: 120px;
+}
+
+/* BUTTONS */
+
+#toTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--orange-crusta); /* Set a background color */
+    color: var(--black); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 0.2s;
+}
+
+#toTopBtn:hover {
+    background-color: var(--black); /* Add a dark-grey background on hover */
+    color: var(--orange-crusta);
+}
+
+.purchaseButton{
+    font-size: 18px;
+    background-color: var(--green-fun);
+}
+
+.purchaseButton:hover{
+    font-size: 18px;
+    background-color: var(--green-riogrande);
+}
+
+.adminButtonGroup{
+    float: right;
+    margin: 0px 0px 0px 15px;
+}
+
+.viewButton{
+    font-size: 18px;
+    background-color: var(--blue-bigstone);
+}
+
+.viewButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.editButton{
+    font-size: 18px;
+    background-color: var(--blue-rhino);
+}
+
+.editButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.addButton{
+    font-size: 18px;
+    background-color: var(--green-pine);
+}
+
+.addButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.removeButton{
+    font-size: 18px;
+    background-color: var(--red-mandy);
+}
+
+.removeButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.myBtn{
+    background-color: var(--green-fun);
+}
+
+.myBtn:hover{
+    background-color: var(--green-riogrande);
+}
+
+/* FOOTER STUFF */
+
+.subscribeContainer{
+    align-items: start;
+}
+
+.subscribeInput{
+    width: 100%;
+}
+
+.subscribeBtn{
+    width: 190px;
+    height: 35px;
+}
+
+/* LINK COLOURS */
+
+.myNavLink:link{
+    color: white;
+}
+
+.myNavLink:visited{
+    color: #fbdb3c;
+}
+
+.myNavLink:hover{
+    color: #6ed2b1;
+}
+
+.myNavLink:active{
+    color: #cc0033;
+}
+
+.footerLink{
+    color: var(--blue-engie) !important;
+    text-decoration: none;
+}
+
+.footerLink:hover{
+    color: var(--yellow) !important;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991.98px) {
+
+    .myJumbotron{
+        height: auto;
+    }
+
+    .myHeroMask{
+        margin: 0;
+        mask-size: 50%;
+        -webkit-mask-size: 50%;
+        mask-position: center;
+        -webkit-mask-position: center;
+    }
+
+    .subscribeContainer{
+        align-items: center;
+    }
+
+}

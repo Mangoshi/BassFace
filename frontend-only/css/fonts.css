@@ -1,0 +1,39 @@
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+small{
+    font-size: 14px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.lato-light{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.lato-regular{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.lato-bold{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.lato-black{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
