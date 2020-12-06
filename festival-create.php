@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>View Festival</title>
+    <title>Create Festival</title>
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,12 +31,12 @@
       <main role="main">
         <div>
           <h3>Create Festival</h3>
-            <form method="post" action="<?= APP_URL ?>/festival-create.php">
+            <form method="post" action="<?= APP_URL ?>/festival-store.php">
 
-                <label for="name" class="mt-2">Name</label>
+                <label for="title" class="mt-2">Name</label>
                 <div class="form-field">
-                    <input type="text" name="name" id="name" value="<?= old('name') ?>" />
-                    <span class="error"><?= error("name") ?></span>
+                    <input type="text" name="title" id="title" value="<?= old('title') ?>" />
+                    <span class="error"><?= error("title") ?></span>
                 </div>
 
                 <label for="description" class="mt-2">Description</label>
@@ -81,15 +81,10 @@
                     <span class="error"><?= error("contact_phone") ?></span>
                 </div>
 
-<!--                <label for="image_id" class="mt-2">Image</label>-->
-<!--                <div class="form-field">-->
-<!--                    <input type="number" name="image_id" id="image_id" value="" />-->
-<!--                </div>-->
-
                 <div class="form-field">
                     <label></label>
                     <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>
-                    <button class="btn editButton text-white btn-festival" id="editButton" type="submit"> <span class="material-icons">note_add</span> STORE</button>
+                    <button class="btn editButton text-white" id="editButton" type="submit"> <span class="material-icons">note_add</span> STORE</button>
                 </div>
             </form>
         </div>

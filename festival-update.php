@@ -1,21 +1,23 @@
 <?php
 require_once 'config.php';
 
-try{
+try {
     $rules = [
-        "title" => "present|minlength:4|maxlength:64",
-        "description" => "present|minlength:10|maxlength:256",
+        'festival_id' => 'present|integer|min:1',
+        "title" => "present|minlength:2|maxlength:64",
+        "description" => "present|minlength:20|maxlength:2000",
         "location" => "present|minlength:4|maxlength:128",
-        "start_date" => "present|match:/\A[0-9]{4}[-][0-9]{2}[-][0-9]{2}/",
-        "end_date" => "present|match:/\A[0-9]{4}[-][0-9]{2}[-][0-9]{2}/",
+        "start_date" => "present|minlength:10|maxlength:10",
+        "end_date" => "present|minlength:10|maxlength:10",
         "contact_name" => "present|minlength:4|maxlength:64",
-        "contact_email" => "present|minlength:7|maxlength:128",
+        "contact_email" => "present|email|minlength:7|maxlength:128",
         "contact_phone" => "present|match:/\A[0-9]{2,3}[-][0-9]{5,7}\Z/",
+
     ];
 
     $request->validate($rules);
     if ($request->is_valid()) {
-        $festival = new Festival();
+        $festival = Festival::findById($request->input('festival_id'));
         $festival->title = $request->input("title");
         $festival->description = $request->input("description");
         $festival->location = $request->input("location");
@@ -34,18 +36,20 @@ try{
 
         $request->redirect("/home.php");
     } else {
+        $festival_id = $request->input('festival_id');
+
         $request->session()->set("flash_data", $request->all());
         $request->session()->set("flash_errors", $request->errors());
 
-        $request->redirect("/festival-create.php");
+        $request->redirect("/festival-edit.php?festival_id=".$festival_id);
     }
-}
-catch (Exception $ex) {
+} catch (Exception $ex) {
+    $festival_id = $request->input('festival_id');
+
     $request->session()->set("flash_message", $ex->getMessage());
     $request->session()->set("flash_message_class", "alert-warning");
     $request->session()->set("flash_data", $request->all());
     $request->session()->set("flash_errors", $request->errors());
 
-    $request->redirect("/festival-create.php");
+    $request->redirect("/festival-edit.php?festival_id=".$festival_id);
 }
-?>

@@ -22,7 +22,7 @@ class Festival {
       $conn = $db->get_connection();
 
       $params = [
-          ":name" => $this->name,
+          ":title" => $this->title,
           ":description" => $this->description,
           ":location" => $this->location,
           ":start_date" => $this->start_date,
@@ -32,11 +32,27 @@ class Festival {
           ":contact_phone" => $this->contact_phone,
           ":image_id" => $this->image_id
       ];
-      $sql = "INSERT INTO festivals (" .
-          "name, description, location, start_date, end_date, contact_name, contact_email, contact_phone, image_id" .
-          ") VALUES (" .
-          ":name, :description, :location, :start_date, :end_date, :contact_name, :contact_email, :contact_phone, :image_id" .
-          ")";
+      if ($this->id === null){
+        $sql = "INSERT INTO festivals (" .
+            "title, description, location, start_date, end_date, contact_name, contact_email, contact_phone, image_id" .
+            ") VALUES (" .
+            ":title, :description, :location, :start_date, :end_date, :contact_name, :contact_email, :contact_phone, :image_id" .
+            ")";
+      } else {
+        $sql = "UPDATE festivals SET " .
+            "title = :title, " .
+            "description = :description, " .
+            "location = :location, " .
+            "start_date = :start_date, " .
+            "end_date = :end_date, " .
+            "contact_name = :contact_name, " .
+            "contact_email = :contact_email, " .
+            "contact_phone = :contact_phone, " .
+            "image_id = :image_id " .
+            "WHERE id = :id";
+        $params[":id"] = $this->id;
+      }
+
       $stmt = $conn->prepare($sql);
       $status = $stmt->execute($params);
 
