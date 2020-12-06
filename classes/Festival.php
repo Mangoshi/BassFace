@@ -78,7 +78,32 @@ class Festival {
   }
 
   public function delete() {
-    throw new Exception("Not yet implemented");
+    try {
+      $db = new DB();
+      $db->open();
+      $conn = $db->get_connection();
+
+      $sql = "DELETE FROM festivals WHERE id = :id" ;
+      $params[":id"] = $this->id;
+
+      $stmt = $conn->prepare($sql);
+      $status = $stmt->execute($params);
+
+      if(!$status) {
+        $error_info = $stmt->errorInfo();
+        $message = "SQLSTATE error code = ".$error_info[0]."; error message = ".$error_info[2];
+        throw new Exception("Database error executing database query: " . $message);
+      }
+
+      if ($stmt->rowCount() !== 1) {
+        throw new Exception("Failed to delete festival.");
+      }
+    }
+    finally {
+      if ($db !== null && $db->is_open()) {
+        $db->close();
+      }
+    }
   }
 
   public static function findAll() {

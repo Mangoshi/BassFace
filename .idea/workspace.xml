@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="789a6b8d-3b55-47d0-8f93-b508393695aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/FileUpload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festival-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festival-delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Festival.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Festival.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-view.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,17 +66,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/festival-create.php" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/festival-edit.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\AWDD\festivals-website-1-Mangoshi" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\AWDD\festivals-website-1-Mangoshi" />
       <recent name="C:\xampp\htdocs\AWDD\festivals-website-1-Mangoshi\lib" />
       <recent name="C:\xampp\htdocs\AWDD\festivals-website-1-Mangoshi\assets\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AWDD\festivals-website-1-Mangoshi" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,7 +97,7 @@
       <workItem from="1605876346102" duration="10591000" />
       <workItem from="1606300844932" duration="4676000" />
       <workItem from="1606390134830" duration="5705000" />
-      <workItem from="1607255382037" duration="2982000" />
+      <workItem from="1607255382037" duration="3872000" />
     </task>
     <servers />
   </component>
@@ -142,14 +137,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="370" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1605792368666" />
-    <state x="100" y="100" width="1094" height="1200" key="DiffContextDialog" timestamp="1606394483846">
+    <state x="100" y="100" width="1094" height="1200" key="DiffContextDialog" timestamp="1607258959528">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="100" y="100" width="1094" height="1200" key="DiffContextDialog/2560.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606394483846" />
-    <state x="787" y="414" key="FileChooserDialogImpl" timestamp="1606394194857">
+    <state x="100" y="100" width="1094" height="1200" key="DiffContextDialog/2560.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607258959528" />
+    <state x="787" y="414" key="FileChooserDialogImpl" timestamp="1607258811936">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="787" y="414" key="FileChooserDialogImpl/2560.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606394194857" />
+    <state x="787" y="414" key="FileChooserDialogImpl/2560.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607258811936" />
     <state width="1234" height="413" key="GridCell.Tab.0.bottom" timestamp="1606309873200">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
