@@ -31,7 +31,8 @@
       <main role="main">
         <div>
           <h3>Create Festival</h3>
-            <form method="post" action="<?= APP_URL ?>/festival-store.php">
+            <form method="post" action="<?= APP_URL ?>/festival-store.php"
+            enctype="multipart/form-data">
 
                 <label for="title" class="mt-2">Name</label>
                 <div class="form-field">
@@ -81,6 +82,12 @@
                     <span class="error"><?= error("contact_phone") ?></span>
                 </div>
 
+                <label for="festival_image" class="mt-2">Festival Image</label>
+                <div class="form-field">
+                    <input type="file" name="festival_image" id="festival_image" />
+                    <span class="error"><?= error("festival_image") ?></span>
+                </div>
+
                 <div class="form-field">
                     <label></label>
                     <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>
@@ -93,6 +100,5 @@
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= APP_URL ?>/assets/js/selectCheck.js"></script>
   </body>
 </html>

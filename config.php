@@ -1,5 +1,6 @@
 <?php
 define('APP_URL', 'http://localhost/awdd/festivals-website-1-Mangoshi');
+define("UPLOAD_DIR", "uploads");
 
 define('DB_SERVER', 'localhost');
 define('DB_DATABASE', 'festivals');

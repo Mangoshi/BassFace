@@ -55,7 +55,8 @@ catch (Exception $ex) {
       <main role="main">
         <div>
           <h3>Edit Festival</h3>
-            <form method="post" action="<?= APP_URL ?>/festival-update.php">
+            <form method="post" action="<?= APP_URL ?>/festival-update.php"
+            enctype="multipart/form-data">
 
                 <input type="hidden" name="festival_id" value="<?= $festival->id ?>" />
 
@@ -79,13 +80,13 @@ catch (Exception $ex) {
 
                 <label for="start_date" class="mt-2">Start Date</label>
                 <div class="form-field">
-                    <input type="date" name="start_date" id="start_date"  value="<?= old('start_date', $festival->start_date) ?>"</input>
+                    <input type="date" name="start_date" id="start_date"  value="<?= old('start_date', $festival->start_date) ?>"/>
                     <span class="error"><?= error("start_date") ?></span>
                 </div>
 
                 <label for="end_date" class="mt-2">End Date</label>
                 <div class="form-field">
-                    <input type="date" name="end_date" id="end_date" value="<?= old('end_date', $festival->end_date) ?>"</input>
+                    <input type="date" name="end_date" id="end_date" value="<?= old('end_date', $festival->end_date) ?>"/>
                     <span class="error"><?= error("end_date") ?></span>
                 </div>
 
@@ -106,12 +107,21 @@ catch (Exception $ex) {
                     <input type="tel" name="contact_phone" id="contact_phone" value="<?= old('contact_phone', $festival->contact_phone) ?>" />
                     <span class="error"><?= error("contact_phone") ?></span>
                 </div>
-<!--
-                <label for="image_id" class="mt-2">Image</label>
+
+                <label for="festival_image" class="mt-2">Festival Image</label>
                 <div class="form-field">
-                    <input type="number" name="image_id" id="image_id" value="" />
+                    <?php
+                    $image = Image::findById($festival->image_id);
+                    if ($image != null) {
+                    ?>
+                    <img src="<?= APP_URL . "/" . $image->filename ?>" width="200px" alt="festival image"/>
+                    <?php
+                    }
+                    ?>
+                    <input type="file" name="festival_image" id="festival_image" />
+                    <span class="error"><?= error("profile")?></span>
                 </div>
--->
+
                 <div class="form-field">
                     <label></label>
                     <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>

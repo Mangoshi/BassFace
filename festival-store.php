@@ -15,6 +15,12 @@ try{
 
     $request->validate($rules);
     if ($request->is_valid()) {
+        $file = new FileUpload("festival_image");
+        $file_path = $file->get();
+        $image = new Image();
+        $image->path = $file;
+        $image->save();
+
         $festival = new Festival();
         $festival->title = $request->input("title");
         $festival->description = $request->input("description");
@@ -24,7 +30,7 @@ try{
         $festival->contact_name = $request->input("contact_name");
         $festival->contact_email = $request->input("contact_email");
         $festival->contact_phone = $request->input("contact_phone");
-        $festival->image_id = 1;
+        $festival->image_id = $image->id;
         $festival->save();
 
         $request->session()->set("flash_message", "The festival was successfully added to the database");
