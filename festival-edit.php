@@ -49,10 +49,9 @@ catch (Exception $ex) {
 
   </head>
   <body>
-    <div class="container">
-      <?php require 'include/header.php'; ?>
+    <div class="container mt-5">
       <?php require 'include/navbar.php'; ?>
-      <main role="main">
+      <main role="main" class="pt-5">
         <div>
           <h3>Edit Festival</h3>
             <form method="post" action="<?= APP_URL ?>/festival-update.php"
@@ -119,7 +118,7 @@ catch (Exception $ex) {
                     }
                     ?>
                     <input type="file" name="festival_image" id="festival_image" />
-                    <span class="error"><?= error("profile")?></span>
+                    <span class="error"><?= error("festival_image")?></span>
                 </div>
 
                 <div class="form-field">
@@ -130,7 +129,6 @@ catch (Exception $ex) {
             </form>
         </div>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>

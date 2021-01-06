@@ -223,6 +223,11 @@ h2{
 
 /* MAIN */
 
+.myFluidContainer{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .myFestivals{
     margin-top: 80px;
 }
