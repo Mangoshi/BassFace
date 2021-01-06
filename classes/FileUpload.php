@@ -17,14 +17,14 @@ class FileUpload {
   public function __construct($key, $destination = null) {
     $this->key = $key;
     if ($destination == null) {
-      $this->destination = 'UPLOAD_DIR';
+      $this->destination = UPLOAD_DIR;
     }
     else {
       $this->destination = rtrim($destination, DIRECTORY_SEPARATOR);;
     }
     $this->maxSize = 1 * 1024 * 1024; // 1 MB
     $this->allowedExtensions = array("jpg", "jpeg", "png", "gif");
-    $this->overwrite = TRUE;
+    $this->overWrite = TRUE;
     $this->file = null;
 
     $this->checkDestination();
@@ -146,6 +146,10 @@ class FileUpload {
     }
     else {
       $this->file = $this->destination . "/" . $saveAsFileName;
+    }
+
+    if (!$this->overWrite && file_exists($this->file)) {
+        throw new Exception("File already exists");
     }
 
     $move_status = move_uploaded_file($tempFileName, $this->file);

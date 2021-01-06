@@ -11,18 +11,17 @@ try {
         "end_date" => "present|minlength:10|maxlength:10",
         "contact_name" => "present|minlength:4|maxlength:64",
         "contact_email" => "present|email|minlength:7|maxlength:128",
-        "contact_phone" => "present|match:/\A[0-9]{2,3}[-][0-9]{5,7}\Z/",
-
+        "contact_phone" => "present|match:/\A[0-9]{2,3}[-][0-9]{5,7}\Z/"
     ];
 
     $request->validate($rules);
     if ($request->is_valid()) {
         $image = null;
-        if (FileUpload::exists('profile')) {
+        if (FileUpload::exists('festival_image')) {
             $file = new FileUpload("festival_image");
             $file_path = $file->get();
             $image = new Image();
-            $image->path = $file;
+            $image->filename = $file_path;
             $image->save();
         }
         $festival = Festival::findById($request->input('festival_id'));

@@ -11,7 +11,41 @@ class Image
 
     public function save()
     {
-        throw new Exception("Not yet implemented!");
+        try {
+            $db = new DB();
+            $db->open();
+            $conn = $db->get_connection();
+
+            $params = [
+                ":filename" => $this->filename
+            ];
+            if ($this->id === null) {
+                $sql = "INSERT INTO images (filename) VALUES (:filename)";
+            } else {
+                $sql = "UPDATE images SET filename = :filename WHERE id = :id";
+                $params[":id"] = $this->id;
+            }
+            $stmt = $conn->prepare($sql);
+            $status = $stmt->execute($params);
+
+            if (!$status) {
+                $error_info = $stmt->errorInfo();
+                $message = "SQLSTATE error code =  " . $error_info[0] . "; error message = " . $error_info[2];
+                throw new Exception("Database error executing database query: " . $message);
+            }
+
+            if ($stmt->rowCount() !== 1) {
+                throw new Exception("Failed to save image.");
+            }
+
+            if ($this->id === null) {
+                $this->id = $conn->lastInsertId();
+            }
+        } finally {
+            if ($db !== null && $db->is_open()) {
+                $db->close();
+            }
+        }
     }
 
     public function delete()
@@ -19,7 +53,7 @@ class Image
         throw new Exception("Not yet implemented!");
     }
 
-    public function findAll()
+    public static function findAll()
     {
         throw new Exception("Not yet implemented!");
     }

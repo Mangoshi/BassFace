@@ -29,9 +29,6 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>View Festival</title>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
 
@@ -39,19 +36,15 @@ try {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
+      <link href="<?= APP_URL ?>/assets/css/mystyle.css" rel="stylesheet">
       <link href="<?= APP_URL ?>/assets/css/form.css" rel="stylesheet">
-
-      <!-- My CSS -->
-      <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/frontend-only/css/mystyle.css">
 
   </head>
   <body>
     <div class="container">
-      <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
-      <main role="main">
-        <div>
+        <main role="main" class="mt-5">
+            <div class="pt-5">
           <h3>View Festival</h3>
             <form method="get">
 
@@ -101,6 +94,7 @@ try {
                 <div class="form-field">
                     <input type="number" name="image_id" id="image_id" disabled value="<?= $festival->image_id ?>" />
                 </div>
+                <div class="form-field">
                 <?php
                 try {
                     $image = Image::findById($festival->image_id);
@@ -113,9 +107,8 @@ try {
                     <?php
                 }
                     ?>
-
+                </div>
                 <div class="form-field">
-                    <label></label>
                     <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>
                     <button class="btn editButton text-white" id="editButton" formaction="<?= APP_URL ?>/festival-edit.php"><span class="material-icons">settings</span> EDIT</button>
                     <button class="btn removeButton text-white btn-festival-delete" id="removeButton" formaction="<?= APP_URL ?>/festival-delete.php"><span class="material-icons">delete_forever</span> DELETE</button>
@@ -123,7 +116,6 @@ try {
             </form>
         </div>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>

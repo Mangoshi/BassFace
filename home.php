@@ -22,9 +22,6 @@ catch (Exception $ex) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Festivals Home</title>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
 
@@ -32,39 +29,34 @@ catch (Exception $ex) {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
-
-      <!-- My CSS -->
-      <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/frontend-only/css/mystyle.css">
-
+      <link href="<?= APP_URL ?>/assets/css/mystyle.css" rel="stylesheet" />
+      <link href="<?= APP_URL ?>/assets/css/fonts.css" rel="stylesheet">
 
   </head>
   <body>
-    <div class="container">
-      <?php require 'include/header.php'; ?>
+    <div class="container-fluid">
       <?php require 'include/navbar.php'; ?>
       <?php require "include/flash.php"; ?>
-      <main role="main">
-        <h3>Home</h3>
-        <p>Welcome, <?= $request->session()->get("name") ?>. This is your home page!</p>
-        <div class="row">
-            <div class="col table-responsive">
-            <h3>Festival Browser</h3>
-                <a class="btn addButton text-white" id="addButton" href="<?= APP_URL ?>/festival-create.php"><span class="material-icons">add_circle</span> ADD</a>
+      <main role="main" class="mb-4">
+        <div class="row mt-5">
+            <div class="col table-responsive mt-4">
+                <h3>Home</h3>
+                <p>Welcome, <?= $request->session()->get("name") ?>. This is your home page!</p>
+                <a class="btn addButton text-white float-right mb-2" id="addButton" href="<?= APP_URL ?>/festival-create.php"><span class="material-icons">add_circle</span> ADD</a>
                 <form method="get">
-                    <table class="table">
-                <thead>
+                    <table class="table table-hover">
+                <thead class="tableHead">
                   <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Location</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                    <th>Contact Name</th>
-                    <th>Contact Email</th>
-                    <th>Contact Phone</th>
-                    <th>Image ID</th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort1" class="tableHeadLink">ID</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort2" class="tableHeadLink">Title</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort3" class="tableHeadLink">Description</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort4" class="tableHeadLink">Location</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort5" class="tableHeadLink">Start Date</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort6" class="tableHeadLink">End Date</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort7" class="tableHeadLink">Name</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort8" class="tableHeadLink">Email</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort9" class="tableHeadLink">Phone</a></th>
+                    <th scope="col" class="tableHeadCol"><a href="#sort10" class="tableHeadLink">Image</a></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -102,8 +94,8 @@ catch (Exception $ex) {
             </div>
           </div>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
+      <?php require 'include/footer.php'; ?>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/selectCheck.js"></script>

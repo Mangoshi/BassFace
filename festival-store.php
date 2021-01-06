@@ -18,7 +18,7 @@ try{
         $file = new FileUpload("festival_image");
         $file_path = $file->get();
         $image = new Image();
-        $image->path = $file;
+        $image->filename = $file_path;
         $image->save();
 
         $festival = new Festival();

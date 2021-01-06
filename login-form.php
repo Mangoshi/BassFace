@@ -9,32 +9,31 @@ if ($request->is_logged_in()) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Form validation example</title>
+    <title>Login</title>
 
     <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
     <link href="<?= APP_URL ?>/assets/css/form.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <?php require 'include/header.php'; ?>
+    <div class="container pt-5">
       <?php require 'include/navbar.php'; ?>
       <?php require "include/flash.php"; ?>
-      <main role="main">
-        <h1>Login Form</h1>
-        <form name='login' action="login.php" method="post">
+      <main role="main" class="pt-5 pl-5 ml-5">
+        <h1 class="ml-5 pl-5">Login</h1>
+        <form name='login' action="login.php" method="post" class="pl-5 ml-5">
 
-          <div class="form-field">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" value="<?= old("email") ?>" />
-            <span class="error"><?= error("email") ?></span>
-          </div>
+            <label for="email" class="pt-3">Email</label>
+            <div class="form-field">
+                <input type="text" name="email" id="email" value="<?= old("email") ?>" />
+                <span class="error"><?= error("email") ?></span>
+            </div>
 
-          <div class="form-field">
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" />
-            <span class="error"><?= error("password") ?></span>
-          </div>
+            <label for="password">Password</label>
+            <div class="form-field">
+                <input type="password" name="password" id="password" />
+                <span class="error"><?= error("password") ?></span>
+            </div>
 
           <div class="form-field">
             <label></label>
@@ -43,7 +42,6 @@ if ($request->is_logged_in()) {
 
         </form>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>

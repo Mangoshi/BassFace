@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Create Festival</title>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
 
@@ -17,22 +14,17 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
+      <link href="<?= APP_URL ?>/assets/css/mystyle.css" rel="stylesheet">
       <link href="<?= APP_URL ?>/assets/css/form.css" rel="stylesheet">
-
-      <!-- My CSS -->
-      <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/frontend-only/css/mystyle.css">
 
   </head>
   <body>
     <div class="container">
-      <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
-      <main role="main">
-        <div>
+      <main role="main" class="mt-5">
+        <div class="pt-5">
           <h3>Create Festival</h3>
-            <form method="post" action="<?= APP_URL ?>/festival-store.php"
-            enctype="multipart/form-data">
+            <form method="post" action="<?= APP_URL ?>/festival-store.php" enctype="multipart/form-data">
 
                 <label for="title" class="mt-2">Name</label>
                 <div class="form-field">
@@ -88,15 +80,13 @@
                     <span class="error"><?= error("festival_image") ?></span>
                 </div>
 
-                <div class="form-field">
-                    <label></label>
-                    <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>
-                    <button class="btn editButton text-white" id="editButton" type="submit"> <span class="material-icons">note_add</span> STORE</button>
+                <div class="form-field mt-3">
+                    <button class="btn editButton text-white float-left" id="editButton" type="submit"> <span class="material-icons">note_add</span> STORE</button><br><br>
+                    <a class="btn viewButton btn-default text-white float-left mt-2" href="<?= APP_URL ?>/home.php">Cancel</a>
                 </div>
             </form>
         </div>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>
