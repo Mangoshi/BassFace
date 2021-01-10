@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="789a6b8d-3b55-47d0-8f93-b508393695aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/16100489265ff7659e7ff44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16102867575ffb06a57b88a.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/register-form.php" afterDir="false" />
-    </list>
+    <list default="true" id="789a6b8d-3b55-47d0-8f93-b508393695aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +116,7 @@
       <workItem from="1610118214551" duration="3490000" />
       <workItem from="1610209847105" duration="500000" />
       <workItem from="1610220348473" duration="1008000" />
-      <workItem from="1610278394129" duration="4905000" />
+      <workItem from="1610278394129" duration="5260000" />
     </task>
     <servers />
   </component>

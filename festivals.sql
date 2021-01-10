@@ -1,3 +1,22 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 10, 2021 at 09:22 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
 --
 -- Database: `festivals`
 --
@@ -41,7 +60,7 @@ INSERT INTO `festivals` (`id`, `title`, `description`, `location`, `start_date`,
 (13, 'Primavera Sound', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nisl enim, vitae placerat lorem dapibus ut. Ut lacinia ultrices convallis. Nam tristique sapien sed mollis mattis. Donec at facilisis lacus. Cras condimentum rhoncus sem lacinia congue. Nam egestas vulputate ipsum, viverra vehicula diam rutrum nec. Quisque commodo vehicula urna vel vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vehicula ex vel risus rutrum sodales. Sed consequat augue ac dui ornare, at aliquet lectus interdum. Nullam sed erat eget ex eleifend sagittis. Vestibulum tristique, neque et cursus blandit, nisi justo hendrerit diam, a condimentum dolor lacus ac elit.\r\n\r\nSuspendisse non fringilla nunc. Vestibulum ornare quis sem eu sollicitudin. Nam porta, eros sed aliquet varius, sapien est tempus orci, eu fermentum tortor augue in tortor. Curabitur faucibus pellentesque accumsan. Sed nec magna ut quam consectetur rutrum ac quis ante. Quisque lectus lorem, malesuada a porta non, laoreet quis urna. Aliquam lorem leo, accumsan ut bibendum eget, venenatis ac diam. Curabitur feugiat diam interdum, mattis quam quis, suscipit purus. Nunc convallis rutrum elit ac pharetra. Nunc eu tellus venenatis, dapibus mauris at, dignissim elit. Aliquam consectetur, dolor eu rhoncus tristique, mauris risus suscipit dolor, eget pharetra dolor orci id neque. Aenean vel metus ac dolor semper consectetur nec tincidunt nisi. Mauris a purus augue. Maecenas id imperdiet urna, sit amet convallis ipsum.\r\n\r\nNulla facilisi. In sed urna quis nunc finibus porta. Pellentesque euismod turpis id sollicitudin pretium. Integer ante leo, efficitur sit amet ultrices ac, pulvinar varius sapien. In vel consectetur orci. Donec eu lacus eget diam pharetra laoreet. Morbi et consequat mi. Ut ut purus non sapien interdum luctus. Pellentesque sit amet vulputate dolor. Donec in imperdiet metus, vitae commodo magna. Fusce pharetra laoreet felis eu imperdiet. Pellentesque maximus nunc accumsan elit euismod molestie. Donec id erat dictum, vestibulum velit non, placerat leo.', 'Spain', '2021-08-15', '2021-08-18', 'Kelvin Adger', 'kelvin@adgar.edu', '+129 (922) 845-1533', 13),
 (14, 'Osheaga Music and Arts Festival', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nisl enim, vitae placerat lorem dapibus ut. Ut lacinia ultrices convallis. Nam tristique sapien sed mollis mattis. Donec at facilisis lacus. Cras condimentum rhoncus sem lacinia congue. Nam egestas vulputate ipsum, viverra vehicula diam rutrum nec. Quisque commodo vehicula urna vel vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vehicula ex vel risus rutrum sodales. Sed consequat augue ac dui ornare, at aliquet lectus interdum. Nullam sed erat eget ex eleifend sagittis. Vestibulum tristique, neque et cursus blandit, nisi justo hendrerit diam, a condimentum dolor lacus ac elit.\r\n\r\nSuspendisse non fringilla nunc. Vestibulum ornare quis sem eu sollicitudin. Nam porta, eros sed aliquet varius, sapien est tempus orci, eu fermentum tortor augue in tortor. Curabitur faucibus pellentesque accumsan. Sed nec magna ut quam consectetur rutrum ac quis ante. Quisque lectus lorem, malesuada a porta non, laoreet quis urna. Aliquam lorem leo, accumsan ut bibendum eget, venenatis ac diam. Curabitur feugiat diam interdum, mattis quam quis, suscipit purus. Nunc convallis rutrum elit ac pharetra. Nunc eu tellus venenatis, dapibus mauris at, dignissim elit. Aliquam consectetur, dolor eu rhoncus tristique, mauris risus suscipit dolor, eget pharetra dolor orci id neque. Aenean vel metus ac dolor semper consectetur nec tincidunt nisi. Mauris a purus augue. Maecenas id imperdiet urna, sit amet convallis ipsum.\r\n\r\nNulla facilisi. In sed urna quis nunc finibus porta. Pellentesque euismod turpis id sollicitudin pretium. Integer ante leo, efficitur sit amet ultrices ac, pulvinar varius sapien. In vel consectetur orci. Donec eu lacus eget diam pharetra laoreet. Morbi et consequat mi. Ut ut purus non sapien interdum luctus. Pellentesque sit amet vulputate dolor. Donec in imperdiet metus, vitae commodo magna. Fusce pharetra laoreet felis eu imperdiet. Pellentesque maximus nunc accumsan elit euismod molestie. Donec id erat dictum, vestibulum velit non, placerat leo.', 'Canada', '2021-07-18', '2021-07-23', 'Andrea Swarts', 'andrea@swarts.co.uk', '+18 (104) 250-4546', 14),
 (15, 'Ultra Europe', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nisl enim, vitae placerat lorem dapibus ut. Ut lacinia ultrices convallis. Nam tristique sapien sed mollis mattis. Donec at facilisis lacus. Cras condimentum rhoncus sem lacinia congue. Nam egestas vulputate ipsum, viverra vehicula diam rutrum nec. Quisque commodo vehicula urna vel vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vehicula ex vel risus rutrum sodales. Sed consequat augue ac dui ornare, at aliquet lectus interdum. Nullam sed erat eget ex eleifend sagittis. Vestibulum tristique, neque et cursus blandit, nisi justo hendrerit diam, a condimentum dolor lacus ac elit.\r\n\r\nSuspendisse non fringilla nunc. Vestibulum ornare quis sem eu sollicitudin. Nam porta, eros sed aliquet varius, sapien est tempus orci, eu fermentum tortor augue in tortor. Curabitur faucibus pellentesque accumsan. Sed nec magna ut quam consectetur rutrum ac quis ante. Quisque lectus lorem, malesuada a porta non, laoreet quis urna. Aliquam lorem leo, accumsan ut bibendum eget, venenatis ac diam. Curabitur feugiat diam interdum, mattis quam quis, suscipit purus. Nunc convallis rutrum elit ac pharetra. Nunc eu tellus venenatis, dapibus mauris at, dignissim elit. Aliquam consectetur, dolor eu rhoncus tristique, mauris risus suscipit dolor, eget pharetra dolor orci id neque. Aenean vel metus ac dolor semper consectetur nec tincidunt nisi. Mauris a purus augue. Maecenas id imperdiet urna, sit amet convallis ipsum.\r\n\r\nNulla facilisi. In sed urna quis nunc finibus porta. Pellentesque euismod turpis id sollicitudin pretium. Integer ante leo, efficitur sit amet ultrices ac, pulvinar varius sapien. In vel consectetur orci. Donec eu lacus eget diam pharetra laoreet. Morbi et consequat mi. Ut ut purus non sapien interdum luctus. Pellentesque sit amet vulputate dolor. Donec in imperdiet metus, vitae commodo magna. Fusce pharetra laoreet felis eu imperdiet. Pellentesque maximus nunc accumsan elit euismod molestie. Donec id erat dictum, vestibulum velit non, placerat leo.', 'Croatia', '2021-05-26', '2021-05-29', 'Brice Walk', 'brice@walk.ca', '+137 (157) 763-6699', 15),
-(16, 'Wanderland Music & Art Festival', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum nisl enim, vitae placerat lorem dapibus ut. Ut lacinia ultrices convallis. Nam tristique sapien sed mollis mattis. Donec at facilisis lacus. Cras condimentum rhoncus sem lacinia congue. Nam egestas vulputate ipsum, viverra vehicula diam rutrum nec. Quisque commodo vehicula urna vel vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vehicula ex vel risus rutrum sodales. Sed consequat augue ac dui ornare, at aliquet lectus interdum. Nullam sed erat eget ex eleifend sagittis. Vestibulum tristique, neque et cursus blandit, nisi justo hendrerit diam, a condimentum dolor lacus ac elit.\r\n\r\nSuspendisse non fringilla nunc. Vestibulum ornare quis sem eu sollicitudin. Nam porta, eros sed aliquet varius, sapien est tempus orci, eu fermentum tortor augue in tortor. Curabitur faucibus pellentesque accumsan. Sed nec magna ut quam consectetur rutrum ac quis ante. Quisque lectus lorem, malesuada a porta non, laoreet quis urna. Aliquam lorem leo, accumsan ut bibendum eget, venenatis ac diam. Curabitur feugiat diam interdum, mattis quam quis, suscipit purus. Nunc convallis rutrum elit ac pharetra. Nunc eu tellus venenatis, dapibus mauris at, dignissim elit. Aliquam consectetur, dolor eu rhoncus tristique, mauris risus suscipit dolor, eget pharetra dolor orci id neque. Aenean vel metus ac dolor semper consectetur nec tincidunt nisi. Mauris a purus augue. Maecenas id imperdiet urna, sit amet convallis ipsum.\r\n\r\nNulla facilisi. In sed urna quis nunc finibus porta. Pellentesque euismod turpis id sollicitudin pretium. Integer ante leo, efficitur sit amet ultrices ac, pulvinar varius sapien. In vel consectetur orci. Donec eu lacus eget diam pharetra laoreet. Morbi et consequat mi. Ut ut purus non sapien interdum luctus. Pellentesque sit amet vulputate dolor. Donec in imperdiet metus, vitae commodo magna. Fusce pharetra laoreet felis eu imperdiet. Pellentesque maximus nunc accumsan elit euismod molestie. Donec id erat dictum, vestibulum velit non, placerat leo.', 'Philippines', '2021-07-01', '2021-07-14', 'Renea Ranck', 'renea@ranck.net', '+304 (965) 426-6733', 16);
+(22, 'The Testing', 'This is a test entry to make sure the add function works.', 'Somewhere On Earth', '2021-01-10', '2021-01-11', 'Someone\'s Name', 'someone@something.com', '123-1234567', 21);
 
 -- --------------------------------------------------------
 
@@ -59,24 +78,52 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `filename`) VALUES
-(1, 'assets/img/festival_01.png'),
-(2, 'assets/img/festival_02.png'),
-(3, 'assets/img/festival_03.png'),
-(4, 'assets/img/festival_04.png'),
-(5, 'assets/img/festival_05.png'),
-(6, 'assets/img/festival_06.png'),
-(7, 'assets/img/festival_07.png'),
-(8, 'assets/img/festival_08.png'),
-(9, 'assets/img/festival_09.png'),
-(10, 'assets/img/festival_10.png'),
-(11, 'assets/img/festival_11.png'),
-(12, 'assets/img/festival_12.png'),
-(13, 'assets/img/festival_13.png'),
-(14, 'assets/img/festival_14.png'),
-(15, 'assets/img/festival_15.png'),
-(16, 'assets/img/festival_16.png');
+(1, 'assets/img/festival_01.jpg'),
+(2, 'assets/img/festival_02.jpg'),
+(3, 'assets/img/festival_03.jpg'),
+(4, 'assets/img/festival_04.jpg'),
+(5, 'assets/img/festival_05.jpg'),
+(6, 'assets/img/festival_06.jpg'),
+(7, 'assets/img/festival_07.jpg'),
+(8, 'assets/img/festival_08.jpg'),
+(9, 'assets/img/festival_09.jpg'),
+(10, 'assets/img/festival_10.jpg'),
+(11, 'assets/img/festival_11.jpg'),
+(12, 'assets/img/festival_12.jpg'),
+(13, 'assets/img/festival_13.jpg'),
+(14, 'assets/img/festival_14.jpg'),
+(15, 'assets/img/festival_15.jpg'),
+(16, 'assets/img/festival_16.jpg'),
+(17, 'uploads/16099288085ff59068da8ea.jpg'),
+(18, 'uploads/16099313235ff59a3bb099c.jpg'),
+(19, 'uploads/16099313805ff59a744835b.jpg'),
+(20, 'uploads/16100489265ff7659e7ff44.jpg'),
+(21, 'uploads/16102867575ffb06a57b88a.jpg');
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `name` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
+(1, 'francis@bloggs.com', '$2y$10$ZBPBhHYkJlJECQQi.P2.4ey.pc5KIbsglmPl6K57Gi7wwlf1FXmlW', 'Francis Bloggs'),
+(2, 'jamie@bloggs.com', '$2y$10$eqN6j1Oz1LnE1HjrCNHEz.l1t4YkzELOicByLXVPZ2H74iiIr92s.', 'Jamie Bloggs'),
+(3, 'pat@bloggs.com', '$2y$10$OBrWCAI8uSFsZ5.zS7H3m.22qT2/F7hbuC2CIIIg6tHPenfl1jFne', 'Pat Bloggs'),
+(4, 'harry@bloggs.com', '$2y$10$r7G2x.xWcHWXI71WbshNiOHaBuRfc6nhqcyxFc73Sq6gpaiJ742Su', 'Harry Bloggs'),
+(5, 'leslie@bloggs.com', '$2y$10$hf1ykNW1javdWfmNmMS8xezH.xk.Sf6fv.nQ5N8Zjhv5ZluR5qSMS', 'Leslie Bloggs'),
+(6, 'francis2@bloggs.com', '$2y$10$YaVU8B2txsItqJxubYdyzuXozC9tcocrivTr64hIi9ofRDb2FRC2K', 'Francis 2');
 
 --
 -- Indexes for dumped tables
@@ -95,7 +142,12 @@ ALTER TABLE `festivals`
 ALTER TABLE `images`
   ADD PRIMARY KEY (`id`);
 
--- --------------------------------------------------------
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -105,15 +157,19 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT for table `festivals`
 --
 ALTER TABLE `festivals`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
--- --------------------------------------------------------
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
@@ -124,5 +180,8 @@ ALTER TABLE `images`
 --
 ALTER TABLE `festivals`
   ADD CONSTRAINT `festivals_image_fk` FOREIGN KEY (`image_id`) REFERENCES `images` (`id`);
+COMMIT;
 
--- --------------------------------------------------------
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
