@@ -41,11 +41,8 @@ catch (Exception $ex) {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
+      <link href="<?= APP_URL ?>/assets/css/mystyle.css" rel="stylesheet">
       <link href="<?= APP_URL ?>/assets/css/form.css" rel="stylesheet">
-
-      <!-- My CSS -->
-      <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/frontend-only/css/mystyle.css">
 
   </head>
   <body>
@@ -120,11 +117,9 @@ catch (Exception $ex) {
                     <input type="file" name="festival_image" id="festival_image" />
                     <span class="error"><?= error("festival_image")?></span>
                 </div>
-
                 <div class="form-field">
-                    <label></label>
-                    <a class="btn viewButton btn-default text-white" href="<?= APP_URL ?>/home.php">Cancel</a>
-                    <button class="btn editButton text-white" id="editButton" type="submit"> <span class="material-icons">note_add</span> UPDATE </button>
+                    <button class="btn editButton text-white float-left" id="editButton" type="submit"> <span class="material-icons">note_add</span> STORE</button><br><br>
+                    <a class="btn viewButton btn-default text-white float-left mt-2" href="<?= APP_URL ?>/home.php">Cancel</a>
                 </div>
             </form>
         </div>

@@ -1,10 +1,14 @@
-<?php require_once 'config.php'; ?>
 <?php
+
+require_once 'config.php';
+
 $festivals = Festival::findAll();
 $closestThree = Festival::sortLimitOffsetAsc("start_date", 3, 0);
 $closestFourth = Festival::sortLimitOffsetAsc("start_date", 1, 3);
 $closestFifth = Festival::sortLimitOffsetAsc("start_date", 1, 4);
+
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>

@@ -20,58 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="789a6b8d-3b55-47d0-8f93-b508393695aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/mystyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/arm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bigVinyl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/concertHero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/confettiPortrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/firebreatherPortrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/redpaint.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/rigPortrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/sandLandscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/triangles.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/vibinLandscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/vibinPortrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16097639585ff30c76ae2bd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16097639705ff30c82186f6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16097651575ff31125a444c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16097654345ff3123a52823.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16099281015ff58da52f896.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16099285895ff58f8d0744e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/16099288085ff59068da8ea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/16100489265ff7659e7ff44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/16102867575ffb06a57b88a.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UPLOAD_DIR/16074257845fcf5ef86b2eb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/template.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Festival.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Festival.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/FileUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/FileUpload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festival-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival-view.php" beforeDir="false" afterPath="$PROJECT_DIR$/festival-view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/bigVinyl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/concertHero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/confettiPortrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/firebreatherPortrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/redpaint.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/rigPortrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/sandLandscape.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/triangles.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/vibinLandscape.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/vibinPortrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/img/vinyl.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/vinyl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-only/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-only/kitpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-only/kitpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/login-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/16074254995fcf5ddbea5ff.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/16074256325fcf5e60eb71e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/register-form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +117,14 @@
       <workItem from="1607604512692" duration="9178000" />
       <workItem from="1609759351812" duration="8209000" />
       <workItem from="1609927911098" duration="2930000" />
-      <workItem from="1609948544339" duration="3156000" />
+      <workItem from="1609948544339" duration="3962000" />
+      <workItem from="1610022008552" duration="2484000" />
+      <workItem from="1610042092442" duration="13000" />
+      <workItem from="1610048219735" duration="822000" />
+      <workItem from="1610118214551" duration="3490000" />
+      <workItem from="1610209847105" duration="500000" />
+      <workItem from="1610220348473" duration="1008000" />
+      <workItem from="1610278394129" duration="4905000" />
     </task>
     <servers />
   </component>

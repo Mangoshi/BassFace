@@ -1,20 +1,27 @@
 <?php
+
 require_once 'config.php';
 
-if (!$request->is_logged_in()) {
+if (!$request->is_logged_in())
+{
   $request->redirect("/login-form.php");
 }
-?>
-<?php
-try{
+
+try
+{
+    $request->session()->forget("flash_data");
+    $request->session()->forget("flash_errors");
     $festivals = Festival::findAll();
 }
-catch (Exception $ex) {
+catch (Exception $ex)
+{
     $request->session()->set("flash_message", $ex->getMessage());
     $request->session()->set("flash_message_class", "alert-warning");
     $festivals = [];
 }
+
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>

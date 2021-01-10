@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Form validation example</title>
+    <title>Register</title>
 
     <link href="<?= APP_URL ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?= APP_URL ?>/assets/css/template.css" rel="stylesheet">
@@ -15,7 +15,7 @@
       <?php require 'include/header.php'; ?>
       <?php require 'include/navbar.php'; ?>
       <?php require "include/flash.php"; ?>
-      <main role="main">
+      <main role="main" class="mt-5">
         <h1>Register Form</h1>
         <form name='register' action="register.php" method="post">
 
@@ -44,7 +44,6 @@
 
         </form>
       </main>
-      <?php require 'include/footer.php'; ?>
     </div>
     <script src="<?= APP_URL ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/bootstrap.bundle.min.js"></script>
